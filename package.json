@@ -1,6 +1,6 @@
 {
   "name": "@lefapps/translations-server",
-  "version": "0.0.0",
+  "version": "4.0.0",
   "description": "Companion package for fetching remote content for @lefapps/translations",
   "main": "./lib/index.js",
   "scripts": {
