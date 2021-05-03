@@ -9,30 +9,34 @@ import isPlainObject from 'lodash/isPlainObject'
 // - find (query)
 
 const checkTranslator = translator => {
-  if (!translator)
+  if (!translator) {
     throw new Error(
       '@lefapps/translations-server expects a translator object to be supplied in the ApolloServer context'
     )
-  if (!isPlainObject(translator))
+  }
+  if (!isPlainObject(translator)) {
     throw new Error(
       '@lefapps/translations-server expects the translator context to be an object'
     )
+  }
   if (
     !has(translator, 'find') ||
     !has(translator, 'findOne') ||
     !has(translator, 'update')
-  )
+  ) {
     throw new Error(
       '@lefapps/translations-server expects the translator context to have the following methods: “find”, “findOne” and “update”'
     )
+  }
   if (
     !isFunction(translator.find) ||
     !isFunction(translator.findOne) ||
     !isFunction(translator.update)
-  )
+  ) {
     throw new Error(
       '@lefapps/translations-server expects the translator methods to be functions'
     )
+  }
   return translator
 }
 
