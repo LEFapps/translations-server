@@ -49,5 +49,12 @@
     "apollo-server": "^2.21.2",
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2"
-  }
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
 }

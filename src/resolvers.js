@@ -1,3 +1,4 @@
+import regeneratorRuntime from 'regenerator-runtime'
 import has from 'lodash/has'
 import omit from 'lodash/omit'
 import isFunction from 'lodash/isFunction'
