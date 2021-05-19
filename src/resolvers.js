@@ -9,9 +9,10 @@ import isPlainObject from 'lodash/isPlainObject'
 // - findOne (query)
 // - find (query)
 
+export { regeneratorRuntime }
+
 const checkTranslator = translator => {
   if (!translator) {
-    console.log(regeneratorRuntime)
     throw new Error(
       '@lefapps/translations-server expects a translator object to be supplied in the ApolloServer context'
     )
