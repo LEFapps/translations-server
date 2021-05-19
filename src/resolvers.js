@@ -1,4 +1,4 @@
-// import regeneratorRuntime from 'regenerator-runtime'
+import regeneratorRuntime from 'regenerator-runtime'
 import has from 'lodash/has'
 import omit from 'lodash/omit'
 import isFunction from 'lodash/isFunction'
@@ -11,6 +11,7 @@ import isPlainObject from 'lodash/isPlainObject'
 
 const checkTranslator = translator => {
   if (!translator) {
+    console.log(regeneratorRuntime)
     throw new Error(
       '@lefapps/translations-server expects a translator object to be supplied in the ApolloServer context'
     )
